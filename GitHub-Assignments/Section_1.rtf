@@ -1,0 +1,190 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fmodern\fprq1 Lucida Console;}{\f2\fmodern\fprq1\fcharset0 Lucida Console;}}
+{\colortbl ;\red0\green191\blue0;\red191\green0\blue191;\red191\green191\blue0;\red0\green191\blue191;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qr\f0\fs28\lang9 Name: Nitin Kandikatla\fs20\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs44 Section_1\par
+\b0\fs22\par
+
+\pard\sa200\sl276\slmult1 22. Create an empty directory 'Assignments' & cd to 'Assignments'.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/Capgemini/Section_1\par
+\cf0 $ mkdir Assignments\par
+\cf1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/Capgemini/Section_1\par
+\cf0 $ cd Assignments/\par
+\f0\par
+23. Create a file README.txt inside 'Assignments' & write few lines about the contents of\par
+'Assignments' folder.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/Capgemini/Section_1/Assignments\par
+\cf0 $ nano README.txt\par
+\f0            Content of README file:\par
+\tab\tab this is html file\par
+\par
+24. Commit README.txt file.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git add README.txt\par
+warning: LF will be replaced by CRLF in README.txt.\par
+The file will have its original line endings in your working directory\par
+\par
+\cf1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git status\par
+On branch master\par
+\par
+No commits yet\par
+\par
+Changes to be committed:\par
+  (use "git rm --cached <file>..." to unstage)\par
+        \cf1 new file:   README.txt\par
+\par
+\par
+Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git commit -m "Added content in html file"\par
+[master (root-commit) 168b92e] Added content in html file\par
+ 1 file changed, 1 insertion(+)\par
+ create mode 100644 README.txt\par
+\f0\par
+25. Now create a new branch 'html-assignments'. \par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git branch html-assignments\par
+\f0\par
+26. Switch to 'html-assignments branch.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git checkout html-assignments\par
+Switched to branch 'html-assignments'\par
+\f0\par
+27. Copy all HTML assignments inside 'Assignments' folder. \par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ nano Headings.html\par
+\f0\tab --->\cf4\f1 <!DOCTYPE html>\par
+
+\pard\li1440\sa200\sl276\slmult1 <html>\par
+<body>\par
+\par
+<h1>\cf0 My First Heading\cf4 </h1>\par
+<p>\cf0 My first paragraph.\cf4 </p>\par
+\par
+</body>\par
+</html>\cf0\f0\par
+
+\pard\sa200\sl276\slmult1\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ nano button.html\par
+\f2\lang1033\tab\f0\lang9 --->\par
+\tab\f1 !DOCTYPE html>\par
+
+\pard\li720\sa200\sl276\slmult1\cf4 <html>\par
+<body>\par
+\par
+<h2>\cf0 HTML Buttons\cf4 </h2>\par
+<p>\cf0 HTML buttons are defined with the button tag:\cf4 </p>\par
+\par
+<button>\cf0 Click me\cf4 </button>\par
+\par
+</body>\par
+</html>\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\par
+28. Commit HTML assignments into 'html-assignments' branch.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ git commit -m "Added Heading and button html file"\par
+[html-assignments 3663ebb] Added Heading and button html file\par
+ 2 files changed, 21 insertions(+)\par
+ create mode 100644 Headings.html\par
+ create mode 100644 button.html\par
+\f0\par
+29. Make minor changes into few files belonging to 'html-assignments' branch.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ nano Headings.html\par
+\f0\tab --->\cf4\f1 <!DOCTYPE html>\par
+
+\pard\li1440\sa200\sl276\slmult1 <html>\par
+<body>\par
+\par
+<h1>\cf0 My First Heading\cf4 </h1>\par
+<h2>\cf0 My second Heading\cf4 </h2>\par
+<p>\cf0 My first paragraph.\cf4 </p>\par
+\par
+</body>\par
+</html>\par
+\cf0\f0\par
+
+\pard\sa200\sl276\slmult1 30. Commit those changed files.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ git commit -m "Added minor changes in Heading.htnl file"\par
+[html-assignments 3357cbe] Added minor changes in Heading.htnl file\par
+ 1 file changed, 1 insertion(+), 1 deletion(-)\par
+\f0\par
+31. Switch to master branch.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\f0\par
+32. Make minor changes into README.txt file & commit those changes into master.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ nano README.txt\f0\par
+\f2\lang1033\tab --->\par
+\tab\f1\lang9 this is html file\par
+\f2\lang1033\tab\f1\lang9 this is master branch\par
+\cf1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git commit -m "Added minor changes in README file"\par
+[master a5f29c6] Added minor changes in README file\par
+ 1 file changed, 1 insertion(+)\par
+\f0\par
+33. Again switch to 'html-assignments' branch.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git checkout html-assignments\par
+Switched to branch 'html-assignments'\par
+\f0\par
+34. Make minor changes into few files belonging to 'html-assignments' branch.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ nano button.html\par
+\f0\tab --->\par
+\tab\f1 !DOCTYPE html>\par
+
+\pard\li720\sa200\sl276\slmult1\cf4 <html>\par
+<body>\par
+\par
+<h2>\cf0 HTML Buttons\cf4 </h2>\par
+<p>\cf0 HTML buttons are defined with the button tag:\cf4 </p>\par
+\par
+<button>\cf0 Click me\cf4 </button>\par
+<button>\cf0 Log in\cf4 </buttton>\par
+\par
+</body>\par
+</html>\par
+
+\pard\sa200\sl276\slmult1\cf0\f0\par
+35. Commit those changes. \par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ git commit -m "Added minor changes in button.html file"\par
+[html-assignments 04ff5fc] Added minor changes in button.html file\par
+ 1 file changed, 2 insertions(+), 1 deletion(-)\par
+\f0\par
+36. Switch to master.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (html-assignments)\par
+\cf0 $ git checkout master\par
+Switched to branch 'master'\par
+\par
+\f0 37. Merge 'html-assignments' branch into master. Confirm all html assignments are shown\par
+in master.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git merge html-assignments\par
+Merge made by the 'recursive' strategy.\par
+ Headings.html | 10 \cf1 ++++++++++\par
+\cf0  button.html   | 12 \cf1 ++++++++++++\par
+\cf0  2 files changed, 22 insertions(+)\par
+ create mode 100644 Headings.html\par
+ create mode 100644 button.html\par
+\par
+\cf1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ ls\par
+Headings.html  README.txt  button.html\par
+\f0\par
+38. Finally delete the 'html-assignments' branch.\par
+\cf1\f1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git branch -d html-assignments\par
+Deleted branch html-assignments (was 04ff5fc).\par
+\cf1 Murlimohan@DESKTOP-9H7SK7N \cf2 MINGW64 \cf3 ~/capgemini1/Section_1/Assignments\cf4  (master)\par
+\cf0 $ git branch\par
+* \cf1 master\cf0\f0\par
+}
+ 
