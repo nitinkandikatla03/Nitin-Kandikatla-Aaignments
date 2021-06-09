@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+header {
+  background-image: url(https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header h1 {
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+  color: azure;
+}
+header p {
+  font-family: "Times New Roman", Times, serif;
+  color: azure;
+}
+header a {
+  background-color: crimson;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border: 0;
+  margin-top: 40px;
+  max-width: 10%;
+  padding: 20px 20px;
+}
+.section1 {
+  padding: 20px;
+  background-color: #ddd;
+}
+.section1 p {
+  text-align: center;
+}
+
+.section2 {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  text-align: center;
+}
+.section3 .box1 {
+  background-color: #ddd;
+}

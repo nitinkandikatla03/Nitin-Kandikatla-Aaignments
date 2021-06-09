@@ -1,0 +1,76 @@
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+  }
+   html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark); 
+    
+  } 
+  body{
+    background-color: #ccc;
+    margin: 30px 50px;
+  }
+  .wrapper{
+      display: grid;
+      grid-gap: 50px;
+       background-color: var(--primary); 
+      text-align: start;
+      box-shadow: var(--shadow);
+      padding: 20px;   
+  }
+  .wrapper h1{
+    text-align: center;
+    
+  }
+  .main-personal{
+      display: grid;
+      grid-gap: 10px;
+      
+  }
+  .main-personal-a{
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 200px 200px;
+      
+  }
+  .ssc{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 200px 300px;
+  }
+.diploma{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 300px;
+}
+.educational h2{
+    text-align: center;
+    
+}
+.educational h4{
+    text-align: start;
+}
+.wrapper .btn{
+        
+        background-color: crimson;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        border: 0;
+        margin-top: 40px;
+        max-width: 10%;
+        text-align: center;
+        align-self: center;
+        
+}
+.button{
+    justify-self: center;
+}
+.main-na.button a:hover{
+    background-color: cyan;
+    color: black;
+  }
