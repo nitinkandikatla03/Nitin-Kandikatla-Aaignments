@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="items-list"></div>
+    <h1>List of Items</h1>
+    <% if (items.length > 0) { %>
+        <% items.forEach(item => { %>
+            <br> Name : <%= item.name %> <br>
+                 Price: <%= item.price %><br> 
+                 ------------------------------------
+        <% }) %>
+        <% } %>
+        <h3>Add Item</h3>
+    <form action="/items" method="post">
+    <label for="name">Enter Item: </label>
+    <input type="text" name="item"><br>
+    <label for="price">Enter Price:</label>
+    <input type="number" name="price"><br>
+    <input type="submit" value="Add Item">
+</form>
+</body>
+</html>
